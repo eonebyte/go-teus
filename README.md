@@ -41,7 +41,7 @@ It is a **foundation toolkit** that sits below all applications.
 - `middleware` → middleware definitions  
 - `shutdown` → shutdown (graceful) function  
 - `validator` → google (validator) binding struct  
-- `wire` → base wire module  
+- `wire` → base wire module (Chi Router)
 
 ---
 
