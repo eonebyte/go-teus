@@ -1,16 +1,15 @@
-# TEUS (t's)
+# TEUS (t's) => [Download / Play Audio](assets/ts.mp3)
 
-:contentReference[oaicite:0]{index=0}
 
-TEUS (pronounced **"t's"**) is a lightweight **Go foundation module** that provides shared tools and utilities for backend development.
+go-teus (pronounced **"go t's"**) is a lightweight **Go foundation module** that provides shared tools and utilities for backend development.
 
 It is designed as a reusable **config and infrastructure toolkit** used across multiple projects such as ERP, MES, and microservices.
 
 ---
 
-## 📦 Purpose
+## Purpose
 
-TEUS provides commonly used building blocks for backend systems:
+go-teus provides commonly used building blocks for backend systems:
 
 - Configuration loader
 - Database helper (SQLX ready)
@@ -19,13 +18,13 @@ TEUS provides commonly used building blocks for backend systems:
 - Error definitions
 - General utilities
 
-Instead of rewriting these components in every project, TEUS centralizes them into a single reusable module.
+Instead of rewriting these components in every project, go-teus centralizes them into a single reusable module.
 
 ---
 
-## 🧠 Philosophy
+## Philosophy
 
-TEUS is NOT a framework and does NOT contain business logic.
+go-teus is NOT a framework and does NOT contain business logic.
 
 It is a **foundation toolkit** that sits below all applications.
 
@@ -33,18 +32,20 @@ It is a **foundation toolkit** that sits below all applications.
 
 ---
 
-## 📁 Packages
+## Packages
 
 - `config` → environment & configuration loader  
 - `database` → PostgreSQL / SQLX helper  
-- `logger` → simple logging utilities  
 - `http` → HTTP response helpers  
-- `utils` → helper functions  
-- `errors` → shared error definitions  
+- `auth` → auth module 
+- `middleware` → middleware definitions  
+- `shutdown` → shutdown (graceful) function  
+- `validator` → google (validator) binding struct  
+- `wire` → base wire module  
 
 ---
 
-## 🚀 Installation
+## Installation
 
 ```bash
 go get github.com/eonebyte/go-teus
