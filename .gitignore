@@ -1,0 +1,21 @@
+# binary
+/tmp
+/bin
+
+# OS
+.DS_Store
+
+# Go build
+*.exe
+*.out
+
+# IDE
+.vscode/
+.idea/
+
+# environment variables
+.env
+.env.local
+.env.development
+.env.production
+.env.test
