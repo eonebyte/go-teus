@@ -49,4 +49,4 @@ It is a **foundation toolkit** that sits below all applications.
 ## Installation
 
 ```bash
-go get github.com/eonebyte/go-teus@v0.1.0
+go get github.com/eonebyte/go-teus@v0.1.1
