@@ -2,10 +2,7 @@
   <img src="assets/logo.png" alt="go-teus logo" width="200" />
 </p>
 
-# TEUS (t's) => # TEUS (t's) <br> <small>[Download / Play Audio](assets/teus.mp3)</small>
-
-
-go-teus (pronounced **"go t's"**) is a lightweight **Go foundation module** that provides shared tools and utilities for backend development.
+go-teus (pronounced **"go t's"** => <small>[voice](assets/teus.mp3)</small>) is a lightweight **Go foundation module** that provides shared tools and utilities for backend development.
 
 It is designed as a reusable **config and infrastructure toolkit** used across multiple projects such as ERP, MES, and microservices.
 
