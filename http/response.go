@@ -29,11 +29,12 @@ func JSON(
 
 func Created(
 	w http.ResponseWriter,
+	r *http.Request,
 	data interface{},
 ) {
-	render.Status(nil, http.StatusCreated)
+	render.Status(r, http.StatusCreated)
 
-	render.JSON(w, nil, APIResponse{
+	render.JSON(w, r, APIResponse{
 		Success: true,
 		Message: "created successfully",
 		Data:    data,
@@ -48,11 +49,12 @@ func NoContent(
 
 func Error(
 	w http.ResponseWriter,
+	r *http.Request,
 	err error,
 ) {
-	render.Status(nil, http.StatusInternalServerError)
+	render.Status(r, http.StatusInternalServerError)
 
-	render.JSON(w, nil, APIResponse{
+	render.JSON(w, r, APIResponse{
 		Success: false,
 		Error:   err.Error(),
 	})
@@ -60,11 +62,12 @@ func Error(
 
 func BadRequest(
 	w http.ResponseWriter,
+	r *http.Request,
 	message string,
 ) {
-	render.Status(nil, http.StatusBadRequest)
+	render.Status(r, http.StatusBadRequest)
 
-	render.JSON(w, nil, APIResponse{
+	render.JSON(w, r, APIResponse{
 		Success: false,
 		Error:   message,
 	})
@@ -72,11 +75,12 @@ func BadRequest(
 
 func NotFound(
 	w http.ResponseWriter,
+	r *http.Request,
 	message string,
 ) {
-	render.Status(nil, http.StatusNotFound)
+	render.Status(r, http.StatusNotFound)
 
-	render.JSON(w, nil, APIResponse{
+	render.JSON(w, r, APIResponse{
 		Success: false,
 		Error:   message,
 	})
@@ -84,11 +88,12 @@ func NotFound(
 
 func Unauthorized(
 	w http.ResponseWriter,
+	r *http.Request,
 	message string,
 ) {
-	render.Status(nil, http.StatusUnauthorized)
+	render.Status(r, http.StatusUnauthorized)
 
-	render.JSON(w, nil, APIResponse{
+	render.JSON(w, r, APIResponse{
 		Success: false,
 		Error:   message,
 	})
