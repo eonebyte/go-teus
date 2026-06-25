@@ -24,7 +24,7 @@ func NewFactory() module.Factory {
 
 func (f *orderFactory) Create(deps module.Dependencies) module.Module {
 	// repo := NewRepository("https://api-erp-dev.adyawinsa.com/idempiere/api/v1", deps.DB)
-	repo := NewRepository("https://api-erp-dev.adyawinsa.com/api/v1", deps.DB)
+	repo := NewRepository("https://192.168.3.40:8443/api/v1", deps.DB)
 	svc := NewService(repo)
 	h := newHandler(svc)
 	return &Module{handler: h}
